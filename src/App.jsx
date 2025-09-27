@@ -4,12 +4,13 @@ import { useState } from "react";
 import './index.css'
 
 import { Route, Routes } from 'react-router-dom'
-import Home from './assets/pages/home';
+
 import Layout from "./Layout";
 import Leads from "./assets/pages/Leads";
 import Buying from "./assets/pages/Buying";
 import Team from "./assets/pages/Team";
 import Profile from "./assets/pages/Profile";
+import Home from './assets/pages/home';
 
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+       <Route path="/Home" element={<Home />}/>
         <Route path="/Leads" element={<Leads />}/>
         <Route path="/Buying" element={<Buying />}/>
         <Route path="/Team" element={<Team />}/>
