@@ -4,7 +4,9 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  optimizeDeps: {
-    include: ["@fortawesome/fontawesome-free/css/all.min.css"],
+    build: {
+    rollupOptions: {
+      external: [], // Make sure this is empty or fontawesome is NOT listed
+    },
   },
 });
