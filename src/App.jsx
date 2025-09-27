@@ -4,7 +4,7 @@ import { useState } from "react";
 import './index.css'
 
 import { Route, Routes } from 'react-router-dom'
-import Home from './assets/pages/home'
+import Home from './assets/pages/home';
 import Layout from "./Layout";
 import Leads from "./assets/pages/Leads";
 import Buying from "./assets/pages/Buying";
