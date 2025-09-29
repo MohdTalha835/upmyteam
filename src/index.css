@@ -780,7 +780,7 @@ input:checked + .slider:before {
   font-family: "Segoe UI", Arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  max-width: 850px;
+  max-width: 1024px;
   margin-bottom: 20px;
   background: #fff;
   border-radius: 12px;
