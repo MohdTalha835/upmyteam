@@ -274,14 +274,14 @@ background-color: rgb(241, 240, 240);
 
              /* Leads Page Css */
 .main-container {
-  padding-bottom: 60px; 
+  padding-bottom: 60px !important; 
   padding: 2px;
 }
 .buying-cards-container{
-   padding-bottom: 65px;
+   padding-bottom: 65px !important;
 }
 .team-cards-wrapper{
-  padding-bottom: 65px;
+  padding-bottom: 65px !important;
 }
 .buttons-group {
   padding: 20px;
@@ -289,7 +289,7 @@ background-color: rgb(241, 240, 240);
   overflow-x: auto;
   flex-wrap: wrap;
   gap: 12px;
-    -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   justify-content: flex-start;
 }
