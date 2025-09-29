@@ -759,7 +759,8 @@ input:checked + .slider:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 15px 0px;
+  /* margin: 15px 0px; */
+  padding: 20px;
 }
 
 .main-container .profile-logo img {
@@ -1129,6 +1130,17 @@ input:checked + .slider:before {
     right: 21px;
     top: 21px;
     height: 77%;
+  }
+    .employee-details {
+    flex: 1;
+    width: 100%;
+  }
+    .employee-details td {
+    font-size: 15px;
+    padding: 12px 5px;
+  }
+  .employee-details td .fas{
+    padding: 0px 15px;
   }
 
   .buttons-group {
