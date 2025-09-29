@@ -275,6 +275,7 @@ background-color: rgb(241, 240, 240);
              /* Leads Page Css */
 .main-container {
   padding-bottom: 60px; 
+  padding: 2px;
 }
 .buying-cards-container{
    padding-bottom: 65px;
