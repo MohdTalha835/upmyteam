@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const cardsData = [
   {
     id: 1,
@@ -73,7 +74,7 @@ const cardsData = [
 ];
 
 const Buying = () => {
-  // State to track which cards are active (edit toggled)
+  
   const [activeCards, setActiveCards] = useState({});
 
   const toggleActive = (id, e) => {
@@ -110,12 +111,9 @@ const Buying = () => {
           </button>
         </form>
       </div>
-
+       <div className="buying-cards-container">
       {cardsData.map(({ id, title, subtitle, number, imgSrc, type }) => (
-        <div
-          key={id}
-          className={`card-wrapper${activeCards[id] ? " active" : ""}`}
-        >
+        <div key={id} className={`card-wrapper${activeCards[id] ? " active" : ""}`}>
           <div className="card-actions">
             <button>
               <i className="fas fa-trash-alt" />
@@ -146,7 +144,7 @@ const Buying = () => {
               <div className="buying-card__bottom">
                 <span className="tag type">{type}</span>
                 <div className="buying-card__actions">
-                  <span className="tag">SOLD </span>
+                  <span className="tag">SOLD</span>
                   <span className="tag">TOTAL</span>
                 </div>
               </div>
@@ -154,10 +152,9 @@ const Buying = () => {
           </div>
         </div>
       ))}
-
-      <button className="add-to-cart-btn">+</button>
     </div>
-  );
-};
+
+  </div>
+  )};
 
 export default Buying;

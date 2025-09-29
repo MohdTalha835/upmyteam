@@ -56,7 +56,7 @@ import { Link } from "react-router-dom";
         </button>
       </form>
     </div>
-    <div className="container-fluid my-3">
+    <div className="container-fluid main-container my-3">
       <div className="card-long full-card p-3 w-80">
         <div className="d-flex justify-content-between align-items-center">
           <div className="text-start">
@@ -251,7 +251,7 @@ import { Link } from "react-router-dom";
       </div>
     </div>
   </div>
-  <button className="add-to-cart-btn">+</button>
+
 </>
    );
  };

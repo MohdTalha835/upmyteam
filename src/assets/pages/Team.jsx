@@ -8,6 +8,7 @@ const TeamCard = ({ name, phone, email, imgSrc }) => {
   };
 
   return (
+    
     <div className="team-card-container">
       <div className="team-card">
         <img src={imgSrc} alt={name} className="team-card__img" />
@@ -135,7 +136,7 @@ const Team = () => {
           </button>
         </form>
       </div>
-
+      <div className="team-cards-wrapper">
       {teamMembers.map((member, index) => (
         <TeamCard
           key={index}
@@ -145,6 +146,7 @@ const Team = () => {
           imgSrc={member.imgSrc}
         />
       ))}
+    </div>
     </div>
   );
 };

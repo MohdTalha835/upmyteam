@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Profile = () => {
+   const [showPopup, setShowPopup] = useState(false); // popup visibility
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
   return (
    <>
   <div className="main-container">
@@ -10,9 +19,9 @@ const Profile = () => {
         alt="Profile"
       />
     </div>
-    <div className="edit-btn" onclick="openPopup()">
-      Edit
-    </div>
+     <div className="edit-btn" onClick={openPopup}>
+          Edit
+        </div>
     <table className="employee-details">
       <tbody>
         <tr>
@@ -83,16 +92,16 @@ const Profile = () => {
       </tbody>
     </table>
   </div>
-  <div className="popup" id="popup">
-    <div className="popup-content">
-      <div className="popup-btn">
-        <span className="left" onclick="closePopup()">
-          <i className="fa-solid fa-xmark" />
-        </span>
+      <div className={`popup ${showPopup ? 'active' : ''}`} id="popup">
+        <div className="popup-content">
+          <div className="popup-btn">
+      <span className="left" onClick={closePopup}>
+              <i className="fa-solid fa-xmark" />
+            </span>
         <h3>Profile Photo</h3>
-        <span className="right" onclick="closePopup()">
-          <i className="fas fa-trash-alt" />
-        </span>
+           <span className="right" onClick={closePopup}>
+              <i className="fas fa-trash-alt" />
+            </span>
       </div>
       <ul>
         <li>
