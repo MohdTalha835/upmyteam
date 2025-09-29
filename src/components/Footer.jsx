@@ -1,29 +1,29 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
    <footer className="footer">
         <div className="footer-links">
-          <a href="/">
+          <Link to="/">
             <i className="fas fa-home" />
             <span>Home</span>
-          </a>
-          <a href="/Leads">
+          </Link>
+          <Link to="/Leads">
             <i className="fas fa-user-friends" />
             <span>Leads</span>
-          </a>
-          <a href="/Buying">
+          </Link>
+          <Link to="/Buying">
             <i className="fas fa-shopping-cart" />
             <span>Buying</span>
-          </a>
-          <a href="/Team">
+          </Link>
+          <Link to="/Team">
             <i className="fas fa-users" />
             <span>Team</span>
-          </a>
-          <a href="/Profile">
+          </Link>
+          <Link to="/Profile">
             <i className="fas fa-user" />
             <span>Profile</span>
-          </a>
+          </Link>
         </div>
       </footer>
   );
